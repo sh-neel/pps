@@ -1,15 +1,18 @@
-#include<stdio.h>
-
-int main(){
-    int number = 5;
-    
-    for (int c = 1; c <= number; c++){
-        for (int r = 5; r >c; r--){
+#include <stdio.h>
+int main()
+{
+    int i,j,k,rows;
+    printf("enter rows: ");
+    scanf("%d",&rows);
+    for(i=1;i<=rows;i++){
+        for(k=rows;k>i;k--){
             printf("  ");
         }
-        for (int r = 1; r <= c; r++){
-          printf("* ");
+        for(j=1;j<=i;j++){
+            printf(" *");
         }
         printf("\n");
     }
+
 }
+
