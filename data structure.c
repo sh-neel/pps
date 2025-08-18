@@ -98,6 +98,9 @@ int peep(int position){
 
 int main()
 {
+    printf("NAME: Neel Shah\n");
+    printf("En No: 240410107090\n");
+    
     push(1);  
     push(2); 
     push(3); 

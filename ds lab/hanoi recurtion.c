@@ -60,6 +60,9 @@ void towerOfHanoi(int n, char source, char auxiliary, char destination) {
 }
 
 int main() {
+    printf("NAME: Neel Shah\n");
+    printf("En No: 240410107090\n");
+    
     int n;
 
     printf("Enter number of disks (max %d): ", MAX);

@@ -5,17 +5,14 @@ int queue[MAX];
 int front = -1;
 int rear = -1;
 
-// Function to check if the queue is empty
 int isEmpty() {
     return (front == -1 || front > rear);
 }
 
-// Function to check if the queue is full
 int isFull() {
     return (rear == MAX - 1);
 }
 
-// Enqueue operation
 void enqueue(int value) {
     if (isFull()) {
         printf("Queue Overflow! Cannot insert %d\n", value);
@@ -29,7 +26,6 @@ void enqueue(int value) {
     printf("%d enqueued to the queue\n", value);
 }
 
-// Dequeue operation
 int dequeue() {
     if (isEmpty()) {
         printf("Queue Underflow! Cannot dequeue.\n");
@@ -37,14 +33,12 @@ int dequeue() {
     }
     int value = queue[front];
     front++;
-    // Reset queue if all elements are dequeued
     if (front > rear) {
         front = rear = -1;
     }
     return value;
 }
 
-// Display the queue elements
 void display() {
     if (isEmpty()) {
         printf("Queue is empty\n");
@@ -58,6 +52,10 @@ void display() {
 }
 
 int main() {
+
+    printf("NAME: Neel Shah\n");
+    printf("En No: 240410107090\n");
+    
     int choice, value;
 
     while (1) {
